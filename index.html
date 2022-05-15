@@ -18,18 +18,9 @@
    <link rel="stylesheet" href="t/v1023/images/css/s3_styles.scss.css">
    <script src="g/libs/jquery/1.10.2/jquery.min.js"></script>
    <script src="g/s3/misc/adaptiveimage/1.0.0/adaptiveimage.js"></script>
-   <link rel='stylesheet' type='text/css' href='shared/highslide-4.1.13/highslide.min.css'>
-   <script type='text/javascript'>
-      hs.graphicsDir = '/shared/highslide-4.1.13/graphics/';
-      hs.outlineType = null;
-      hs.showCredits = false;
-      hs.lang = { cssDirection: 'ltr', loadingText: 'Загрузка...', loadingTitle: 'Кликните чтобы отменить', focusTitle: 'Нажмите чтобы перенести вперёд', fullExpandTitle: 'Увеличить', fullExpandText: 'Полноэкранный', previousText: 'Предыдущий', previousTitle: 'Назад (стрелка влево)', nextText: 'Далее', nextTitle: 'Далее (стрелка вправо)', moveTitle: 'Передвинуть', moveText: 'Передвинуть', closeText: 'Закрыть', closeTitle: 'Закрыть (Esc)', resizeTitle: 'Восстановить размер', playText: 'Слайд-шоу', playTitle: 'Слайд-шоу (пробел)', pauseText: 'Пауза', pauseTitle: 'Приостановить слайд-шоу (пробел)', number: 'Изображение %1/%2', restoreTitle: 'Нажмите чтобы посмотреть картинку, используйте мышь для перетаскивания. Используйте клавиши вперёд и назад' };</script>
 
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-   <link href="css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/assets/css/custom.css">
 
-   <link rel='stylesheet' type='text/css' href='shared/s3/css/calendar.css'>
    <link rel="icon" href="favicon.ico" type="image/x-icon">
    <link href="g/s3/anketa2/1.0.0/css/jquery-ui.css" rel="stylesheet" type="text/css">
    <script src="g/libs/jqueryui/1.10.0/jquery-ui.min.js" type="text/javascript"></script>
@@ -46,7 +37,7 @@
    <meta property="og:type" content="website">
    <meta property="og:url" content="http://tc-6.ru/">
    <meta name="twitter:card" content="summary">
-   
+
 
 </head>
 
@@ -270,67 +261,14 @@
       </div>
 
       <div class="editorElement layer-type-block ui-droppable block-48">
-         <div class="editorElement layer-type-block ui-droppable block-49">
-            <div class="layout layout_center not-columned layout_106_id_105">
-               <div class="form-105 widget-75 vertical_mode widget-type-form_adaptive editorElement layer-type-widget">
-                  <div class="form__header">
-                     <div class="align-elem" style="font-family: 'Montserrat';">Напишите нам </div>
-                  </div>
-                  <div class="form__body" data-api-type="form"
-                     data-api-url="/my/s3/xapi/public/?method=form/postform&amp;param[form_id]=2901816">
-                     <form method="post">
-                        <input type="hidden" name="_form_item" value="105">
-                        <input type="hidden" name="form_id" value="2901816">
-                        <input type="hidden" name="tpl" value="db:title.tpl">
-                        <div class="form-table">
-                           <div class="form-tbody">
-                              <div class="form-item-group group-text">
-
-                                 <div class="form-item form-text name">
-                                    <div class="form-item__body"><input class="wm-input-default"
-                                          placeholder="* Ваше имя: " type="text" size="1" maxlength="100" value=""
-                                          name="name_user" required=""></div>
-                                 </div>
-
-                                 <div class="form-item form-text email">
-                                    <div class="form-item__body"><input class="wm-input-default"
-                                          placeholder="* Эл. почта: " type="text" size="1" maxlength="100" value=""
-                                          name="email_user" required=""></div>
-                                 </div>
-
-
-                                 <div class="form-item form-text phone">
-                                    <div class="form-item__body"><input class="wm-input-default"
-                                          placeholder="* Телефон: " type="text" size="1" maxlength="100" value=""
-                                          name="telefon" required=""></div>
-                                 </div>
-                              </div>
-                              <div class="form-item-group group-textarea">
-                                 <div class="form-item form-textarea comments"><label class="form-item__body"><textarea
-                                          class="wm-input-default" placeholder=" Комментарии: " cols="1" rows="1"
-                                          name="comment"></textarea></label></div>
-                              </div>
-                           </div>
-                           <div class="form-tfoot">
-                              <div class="form-item-group group-button">
-                                 <div class="form-submit">
-                                    <div class="form-item__body">
-                                       <button class="wm-input-default"
-                                          style="font-family: 'Montserrat';     background-color: #FF8D00; border: none; color: #fff; "
-                                          type="submit"><span class="align-elem">Отправить</span></button>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <re-captcha data-captcha="recaptcha" data-name="captcha"
-                           data-sitekey="6LddAuIZAAAAAAuuCT_s37EF11beyoreUVbJlVZM" data-lang="ru" data-rsize="invisible"
-                           data-type="image" data-theme="light"></re-captcha>
-                     </form>
-                  </div>
-               </div>
-            </div>
-         </div>
+         <form method="post" action="#" id="callback_form">
+            <p class="callback__title">Напишите нам</p>
+            <input type="text" name="callback_name" id="callback_name" placeholder="Имя*" required>
+            <input type="email" name="callback_email" id="callback_email" placeholder="Email*" required>
+            <input type="tel" name="callback_phone" id="callback_phone" placeholder="Телефон*" required>
+            <textarea name="callback_comment" id="callback_comment" placeholder="Комментарий"></textarea>
+            <button type="submit" class="callback_submit">Отправить</button>
+         </form>
 
          <div class="editorElement layer-type-block ui-droppable block-57">
             <div class="layout column layout_56">
