@@ -39,3 +39,19 @@ footer{
     margin-bottom: 20px;
     text-align: center;
 }
+
+.bold{
+    font-weight: 600;
+}
+
+.center{
+    text-align: center;
+}
+
+.index-about-us{
+    font-size: 40px;
+    margin-bottom: 0;
+    font-family: 'Montserrat';
+    color: #0098e5;
+    line-height: 1.5;
+}
