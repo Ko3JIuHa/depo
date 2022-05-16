@@ -488,60 +488,15 @@
 
 
                <div class="form-105 widget-75 vertical_mode widget-type-form_adaptive editorElement layer-type-widget">
-                  <div class="form__header">
-                     <div class="align-elem">Напишите нам</div>
-                  </div>
-                  <div class="form__body" data-api-type="form"
-                     data-api-url="/my/s3/xapi/public/?method=form/postform&param[form_id]=2901816">
-                     <form method="post">
-                        <input type="hidden" name="_form_item" value="105">
-                        <input type="hidden" name="form_id" value="2901816">
-                        <input type="hidden" name="tpl" value="db:bottom.tpl">
-                        <div class="form-table">
-                           <div class="form-tbody">
-                              <div class="form-item-group group-text">
 
-                                 <div class="form-item form-text name">
-                                    <div class="form-item__body"><input class="wm-input-default"
-                                          placeholder="* Ваше имя: " type="text" size="1" maxlength="100" value=""
-                                          name="name_user" required=""></div>
-                                 </div>
-
-                                 <div class="form-item form-text email">
-                                    <div class="form-item__body"><input class="wm-input-default"
-                                          placeholder="* Эл. почта: " type="text" size="1" maxlength="100" value=""
-                                          name="email_user" required=""></div>
-                                 </div>
-
-
-                                 <div class="form-item form-text phone">
-                                    <div class="form-item__body"><input class="wm-input-default"
-                                          placeholder="* Телефон: " type="text" size="1" maxlength="100" value=""
-                                          name="telefon" required=""></div>
-                                 </div>
-                              </div>
-
-
-
-                              <div class="form-item-group group-textarea">
-                                 <div class="form-item form-textarea comments"><label class="form-item__body"><textarea
-                                          class="wm-input-default" placeholder=" Комментарии: " cols="1" rows="1"
-                                          name="comment"></textarea></label></div>
-                              </div>
-                           </div>
-                           <div class="form-tfoot">
-                              <div class="form-item-group group-button">
-                                 <div class="form-submit">
-                                    <div class="form-item__body"><button class="wm-input-default" type="submit"><span
-                                             class="align-elem">Отправить</span></button>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <re-captcha data-captcha="recaptcha" data-name="captcha"
-                           data-sitekey="6LddAuIZAAAAAAuuCT_s37EF11beyoreUVbJlVZM" data-lang="ru" data-rsize="invisible"
-                           data-type="image" data-theme="light"></re-captcha>
+                  <div class="form__body">
+                     <form method="post" action="#" id="callback_form">
+                        <p class="callback__title">Напишите нам</p>
+                        <input type="text" name="callback_name" id="callback_name" placeholder="Имя*" required>
+                        <input type="email" name="callback_email" id="callback_email" placeholder="Email*" required>
+                        <input type="tel" name="callback_phone" id="callback_phone" placeholder="Телефон*" required>
+                        <textarea name="callback_comment" id="callback_comment" placeholder="Комментарий"></textarea>
+                        <button type="submit" class="callback_submit">Отправить</button>
                      </form>
                   </div>
                </div>
